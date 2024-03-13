@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <table>
+        <tr>
+            <th>Account</th>
+            <th>Balance</th>
+        </tr>
+        {% for account in accounts %}
+        <tr>
+            <td>{{ account.name }}</td>
+            <td>{{ account.balance }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/add_account">Add Account</a>
+</body>
+</html>
